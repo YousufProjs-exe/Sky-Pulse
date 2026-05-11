@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- linking Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <!-- APP STRUCTURE -->
+        <div class="app">
+            <h1>SkyPulse 🌤</h1>
+            <p class="credit">By Yousuf</p>
+
+            <!-- Search Bar -->
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Enter City Name">
+
+                <div id="history"></div>
+
+                <button onclick="getWeather()">Search</button>
+            </div>
+
+            <!-- Weather Details -->
+            <div class="weather">
+                <h2 id="city">City</h2>
+                <p id="loading">Loading weather...</p>
+                <img id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="weather icon" />
+                <p id="feelsLike">Feels like: -- °C</p>
+                <p id="temp">-°C</p>
+                <p id="desc">---</p>
+            </div>
+
+        </div>
+    </section>
+
+      <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+    </div>
+
+    <br>
+
+    <div class="footer-brand">
+      <p>
+        Creative Developer building immersive
+        digital experiences and modern web projects.
+
+        Available for Freelance Projects,
+        Internships and Collaborations.
+      </p>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-icons">
+        <a href="https://github.com/YousufProjs-exe" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yousuf-uddin-a839b23b2" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/yousuf.env" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:saadkhaja2@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2026 Khaja Yousuf Uddin</p>
+        <p>Designed & Developed by SAAD.</p>
+      </div>
+  
+    </footer>
+
+    <!-- linking Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
